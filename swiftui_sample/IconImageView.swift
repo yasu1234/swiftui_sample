@@ -10,12 +10,18 @@ import SwiftUI
 
 struct IconImageView: View {
     var body: some View {
-        Image("Icon")
-            .resizable()
-            .clipShape(Circle())
-            .overlay(Circle().stroke(Color.blue, lineWidth: 4))
-            .shadow(radius: 10)
-            .frame(width: 300, height: 300)
+        VStack {
+            Image("Icon")
+                .resizable()
+                .clipShape(Circle())
+                .overlay(Circle().stroke(Color.blue, lineWidth: 4))
+                .shadow(radius: 10)
+                .frame(width: 300, height: 300)
+            
+            Text("Hello World")
+            .font(.largeTitle)
+            .foregroundColor(Color.red)
+        }
     }
 }
 
