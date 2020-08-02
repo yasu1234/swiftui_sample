@@ -14,7 +14,7 @@ struct Human: Hashable, Codable {
     var age: String
     var city: String
     var sex: String
-    fileprivate var extra: Extra
+    var extra: Extra
 }
 
 struct Extra: Hashable, Codable {
