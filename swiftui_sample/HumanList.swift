@@ -10,7 +10,7 @@ import SwiftUI
 
 struct HumanList: View {
     var body: some View {
-        List(humanData, id: \.id) {human in
+        List(humanData) {human in
             HumanRow(human:human)
         }
     }
