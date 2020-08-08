@@ -13,15 +13,20 @@ struct HumanRow: View {
     var human: Human
     
     var body: some View {
-        HStack {
-            Text(human.age)
-            Text(human.extra.blood)
+        List {
+            HStack {
+                Text(human.age)
+                Text(human.extra.blood)
+            }
         }
     }
 }
 
 struct HumanRow_Previews: PreviewProvider {
     static var previews: some View {
-        HumanRow(human: humanData[0])
+        Group {
+            HumanRow(human: humanData[0])
+            HumanRow(human: humanData[1])
+        }
     }
 }
