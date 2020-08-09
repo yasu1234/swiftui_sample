@@ -10,8 +10,13 @@ import SwiftUI
 
 struct HumanList: View {
     var body: some View {
-        List(humanData) {human in
-            HumanRow(human:human)
+        NavigationView {
+            List(humanData) {human in
+                NavigationLink(destination: HumanDetail()) {
+                    HumanRow(human:human)
+                }
+            }
+            .navigationBarTitle(Text("Human"))
         }
     }
 }
