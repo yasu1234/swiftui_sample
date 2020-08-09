@@ -21,6 +21,7 @@
 		D2AC130D24D6CDAD007EE06A /* Human.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AC130C24D6CDAD007EE06A /* Human.swift */; };
 		D2AC130F24D6D1A6007EE06A /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AC130E24D6D1A6007EE06A /* Data.swift */; };
 		D2AC131124DEEC65007EE06A /* HumanList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AC131024DEEC65007EE06A /* HumanList.swift */; };
+		D2AC131324DF2654007EE06A /* HumanDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AC131224DF2654007EE06A /* HumanDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		D2AC130C24D6CDAD007EE06A /* Human.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Human.swift; sourceTree = "<group>"; };
 		D2AC130E24D6D1A6007EE06A /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		D2AC131024DEEC65007EE06A /* HumanList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanList.swift; sourceTree = "<group>"; };
+		D2AC131224DF2654007EE06A /* HumanDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				D2AC130424CFA099007EE06A /* IconImageView.swift */,
 				D2AC130924D6CD49007EE06A /* HumanRow.swift */,
 				D2AC131024DEEC65007EE06A /* HumanList.swift */,
+				D2AC131224DF2654007EE06A /* HumanDetail.swift */,
 				D23A818F24CC889C0056BF6E /* Assets.xcassets */,
 				D23A819424CC889C0056BF6E /* LaunchScreen.storyboard */,
 				D23A819724CC889C0056BF6E /* Info.plist */,
@@ -309,6 +312,7 @@
 				D23A818C24CC889C0056BF6E /* SceneDelegate.swift in Sources */,
 				D2AC130A24D6CD49007EE06A /* HumanRow.swift in Sources */,
 				D23A818E24CC889C0056BF6E /* ContentView.swift in Sources */,
+				D2AC131324DF2654007EE06A /* HumanDetail.swift in Sources */,
 				D2AC131124DEEC65007EE06A /* HumanList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
