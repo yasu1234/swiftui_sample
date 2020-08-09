@@ -2,8 +2,8 @@
 //  HumanDetail.swift
 //  swiftui_sample
 //
-//  Created by 神代泰宏 on 2020/08/09.
-//  Copyright © 2020 神代泰宏. All rights reserved.
+//  Created by kuma on 2020/08/09.
+//  Copyright © 2020 kuma. All rights reserved.
 //
 
 import SwiftUI
