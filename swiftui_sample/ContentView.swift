@@ -10,9 +10,23 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello World")
-            .font(.largeTitle)
-            .foregroundColor(Color.red)
+        VStack(spacing: 8){
+            Text("Hello World")
+                .font(.largeTitle)
+                .fixedSize(horizontal: true, vertical: false)
+                .frame(width: 100)
+            Text("Hello World2")
+                .font(.title)
+            Text("Hello World3")
+                .font(.headline)
+            Text("Hello World4")
+                .font(.subheadline)
+                .foregroundColor(.red)
+            Text("Hello World5")
+                .font(.body)
+            Text("Hello World6")
+                .font(.footnote)
+        }
     }
 }
 
