@@ -9,11 +9,19 @@
 import SwiftUI
 
 struct HumanList: View {
+    @State var showOBloodOnly = false
     var body: some View {
         NavigationView {
-            List(humanData) {human in
-                NavigationLink(destination: HumanDetail()) {
-                    HumanRow(human:human)
+            List {
+                Toggle(isOn: self.$showOBloodOnly) {
+                    Text("O型のみ表示")
+                }
+                ForEach(humanData) {human in
+                    if !self.showOBloodOnly || human.extra.blood == "O" {
+                        NavigationLink(destination: HumanDetail(human: human)) {
+                            HumanRow(human:human)
+                        }
+                    }
                 }
             }
             .navigationBarTitle(Text("Human"))
