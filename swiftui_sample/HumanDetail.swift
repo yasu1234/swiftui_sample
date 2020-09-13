@@ -9,13 +9,18 @@
 import SwiftUI
 
 struct HumanDetail: View {
+    var human: Human
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("名前：" + human.name)
+            Text("年齢：" + human.age)
+            Text("ID：" + String(human.id))
+        }
     }
 }
 
 struct HumanDetail_Previews: PreviewProvider {
     static var previews: some View {
-        HumanDetail()
+        HumanDetail(human: humanData[0])
     }
 }
