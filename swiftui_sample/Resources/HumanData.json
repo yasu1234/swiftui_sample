@@ -5,6 +5,7 @@
         "city": "AAAAA",
         "sex": "M",
         "id": 1001,
+        "isFavorite": false,
         "extra": {
             "blood": "O",
             "hand": "left"
@@ -16,6 +17,7 @@
         "city": "BBBBB",
         "sex": "F",
         "id": 1002,
+        "isFavorite": true,
         "extra": {
             "blood": "A",
             "hand": "left"
@@ -27,6 +29,7 @@
         "city": "CCCCC",
         "sex": "M",
         "id": 1003,
+        "isFavorite": false,
         "extra": {
             "blood": "AB",
             "hand": "right"
@@ -38,6 +41,7 @@
         "city": "DDDDD",
         "sex": "F",
         "id": 1004,
+        "isFavorite": true,
         "extra": {
             "blood": "B",
             "hand": "right"
@@ -49,6 +53,7 @@
         "city": "EEEEE",
         "sex": "F",
         "id": 1005,
+        "isFavorite": false,
         "extra": {
             "blood": "O",
             "hand": "U"
@@ -60,6 +65,7 @@
         "city": "FFFFF",
         "sex": "U",
         "id": 1006,
+        "isFavorite": true,
         "extra": {
             "blood": "U",
             "hand": "right"

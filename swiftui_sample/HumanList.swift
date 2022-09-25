@@ -17,7 +17,8 @@ struct HumanList: View {
                     Text("O型のみ表示")
                 }
                 ForEach(humanData) {human in
-                    if !self.showOBloodOnly || human.extra.blood == "O" {
+                    if !self.showOBloodOnly ||
+                        human.extra.blood == "O" {
                         NavigationLink(destination: HumanDetail(human: human)) {
                             HumanRow(human:human)
                         }

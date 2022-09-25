@@ -15,6 +15,7 @@ struct Human: Hashable, Codable, Identifiable {
     var city: String
     var sex: String
     var extra: Extra
+    var isFavorite = false
 }
 
 struct Extra: Hashable, Codable {

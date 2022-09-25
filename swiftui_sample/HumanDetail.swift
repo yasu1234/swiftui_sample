@@ -10,7 +10,7 @@ import SwiftUI
 
 struct HumanDetail: View {
     var human: Human
-    @State private var isShowOkAlert: Bool = false
+    @State private var isShowOkAlert = false
     @Environment(\.presentationMode) var presentation: Binding<PresentationMode>
     
     var body: some View {

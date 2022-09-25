@@ -8,7 +8,6 @@
 
 import UIKit
 import SwiftUI
-import CoreLocation
 
 let humanData: [Human] = load("HumanData.json")
 
