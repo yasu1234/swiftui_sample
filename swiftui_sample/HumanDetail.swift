@@ -41,6 +41,6 @@ struct HumanDetail: View {
 
 struct HumanDetail_Previews: PreviewProvider {
     static var previews: some View {
-        HumanDetail(human: humanData[0])
+        HumanDetail(human: HumanModel().humanData[0])
     }
 }

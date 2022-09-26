@@ -21,6 +21,7 @@ struct HumanRow: View {
             
             if human.isFavorite {
                 Image(systemName: "star.fill")
+                    .foregroundColor(.yellow)
             }
         }
     }
@@ -28,6 +29,6 @@ struct HumanRow: View {
 
 struct HumanRow_Previews: PreviewProvider {
     static var previews: some View {
-        HumanRow(human: humanData[1])
+        HumanRow(human: HumanModel().humanData[1])
     }
 }

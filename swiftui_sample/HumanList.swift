@@ -9,19 +9,24 @@
 import SwiftUI
 
 struct HumanList: View {
+    @EnvironmentObject var modelData: HumanModel
     @State var showOBloodOnly = false
+    
+    var filteredHumans: [Human] {
+        modelData.humanData.filter { human in
+            (!showOBloodOnly || human.extra.blood == "O")
+        }
+    }
+    
     var body: some View {
         NavigationView {
             List {
                 Toggle(isOn: self.$showOBloodOnly) {
                     Text("O型のみ表示")
                 }
-                ForEach(humanData) {human in
-                    if !self.showOBloodOnly ||
-                        human.extra.blood == "O" {
-                        NavigationLink(destination: HumanDetail(human: human)) {
-                            HumanRow(human:human)
-                        }
+                ForEach(filteredHumans) {human in
+                    NavigationLink(destination: HumanDetail(human: human)) {
+                        HumanRow(human:human)
                     }
                 }
             }
@@ -32,6 +37,6 @@ struct HumanList: View {
 
 struct HumanList_Previews: PreviewProvider {
     static var previews: some View {
-        HumanList()
+        HumanList().environmentObject(HumanModel())
     }
 }
