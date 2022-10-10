@@ -22,6 +22,7 @@ struct HumanRow: View {
             if human.isFavorite {
                 Image(systemName: "star.fill")
                     .foregroundColor(.yellow)
+                    .rotationEffect(.degrees(90))
             }
         }
     }
